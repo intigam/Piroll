@@ -1,0 +1,506 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+
+a{ text-decoration: none;}
+
+li{list-style: none;}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 90px;
+}
+
+/*********HEADER********/
+header .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header.sticky{
+    background: #ffffff;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+header.sticky .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    transition:  1s;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    font-size: 12px;
+    font-weight: 600;
+    color: #171717;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul li a:hover{
+    color: #10c9c3;
+    transition: .2s;
+}
+
+.menu ul li.active a{
+    color: #10c9c3;
+}
+
+.menu ul li:nth-child(2){
+    margin: 0 30px;
+}
+
+/********* HOME > TEXT **********/
+#home .text .container-fluid{
+    background: #f6f6f6;
+}
+
+.container-fluid .row .col-12{
+    text-align: center;
+    padding: 100px 0;
+}
+
+.container-fluid .row .col-12 h1{
+    font-size: 38px;
+    line-height: 84px;
+    font-weight: 600;
+    color: #171717;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid .row .col-12 p{
+    font-weight: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #787878;
+}
+
+/********** HOME > WORKS **********/
+#home .works .container-fluid{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#home .works .container-fluid .row{
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(4, 25%);
+}
+
+#home .works .container-fluid .row .box .overlay i{
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#home .works .container-fluid .row .box .overlay{
+    display: none;
+}
+
+#home .works .container-fluid .row .box{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#home .works .container-fluid .row .box img{
+    width: 100%;
+}
+
+#home .works .container-fluid .row .box:hover .overlay{
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background: #10c9c3;
+    opacity: 0.7;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+
+
+/*********** ABOUT PAGE *********/
+#about .banner .container-fluid .row .col-12{
+    background: linear-gradient(rgba(0,0,0,0.6), 
+    rgba(0,0,0,0.6)), 
+    url("../images/about-bg.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#about .banner .container-fluid .row .col-12 h1,
+#about .banner .container-fluid .row .col-12 p{
+    color: #ffffff;
+}
+
+/********** ABOUT > NUMBERS **********/
+#about .numbers{
+    background: #10c9c3;
+}
+
+#about .numbers .container .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 90px 0;
+}
+
+#about .numbers .container .row .col-3{
+    display: flex;
+    align-items: center;
+}
+
+#about .numbers .container .row .col-3 .icon i{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+#about .numbers .container .row .col-3 .icon-text h4,
+#about .numbers .container .row .col-3 .icon-text p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 17px;
+}
+
+#about .numbers .container .row .col-3 .icon-text p{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/********** ABOUT > ABOUT-ME **********/
+#about .about-me .container-fluid{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#about .about-me .container-fluid .row{
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+}
+
+#about .about-me .container-fluid .row .about-me-img{
+    width: 683px;
+    height: auto;
+    overflow: hidden;
+    flex-basis: 50%;
+}
+
+#about .about-me .container-fluid .row .about-me-img img{
+    width: 100%;
+    height: auto;
+}
+
+#about .about-me .container-fluid .row .about-me-txt{
+    flex-basis: 50%;
+    margin-right:7%;
+    margin-left:7%;
+}
+
+#about .about-me .container-fluid .row .about-me-txt h1{
+    font-size: 30px;
+    line-height: 84px;
+    color: #171717;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about .about-me .container-fluid .row .about-me-txt p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#about .about-me .container-fluid .row .about-me-txt .signature{
+    width: 200px;
+    margin-top: 25px;
+}
+
+#about .about-me .container-fluid .row .about-me-txt .signature img{
+    width: 100%;
+}
+
+/********** ABOUT > NEED A PROJECT? ********/
+#about .container-fluid .row .col-12{
+    background: #ffffff;   
+}
+
+#about .container-fluid .row .col-12 h1{
+    color: #1d1d1d;
+}
+
+#about .container-fluid .row .col-12 p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+button{
+    width: 180px;
+    height: 54px;
+    background: #10c9c3;
+    border: 1px solid #10c9c3;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 35px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background: transparent;
+    color: #10c9c3;
+    transition: .5s;
+}
+
+
+
+/* CONTACT PAGE */
+#contact .container{
+    background: #f5f5f5;
+    padding-bottom: 7%;
+}
+
+#contact .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 90px 0;
+}
+
+#contact .container .row .col-6-txt,
+#contact .container .row .col-6-inp{
+    flex-basis: 50%;
+}
+
+#contact .container .row .col-6-txt h1{
+    font-size: 30px;
+    line-height: 84px;
+    color: #171717;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact .container .row .col-6-txt p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 380px;
+    padding-right: 5px;
+}
+
+#contact .container .row .col-6-txt p:nth-child(even){
+    margin: 15px 0;
+}
+
+#contact .container .row .col-6-txt p span{
+    color: #171717;
+    font-weight: 700;
+}
+
+#contact .container .row .col-6-inp input:focus,
+#contact .container .row .col-6-inp textarea:focus{
+    border: 2px solid #10c9c3;
+    outline: #10c9c3;
+}
+
+#contact .container .row .col-6-inp input,
+#contact .container .row .col-6-inp textarea{
+    background: #ffffff;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #787878;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    outline: none;
+    border: none;
+}
+
+#contact .container .row .col-6-inp input{
+    width: 47%;
+    height: 48px;
+}
+
+#contact .container .row .col-6-inp .one{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .container .row .col-6-inp .two input,
+#contact .container .row .col-6-inp .two textarea{
+    width: 100%;
+}
+
+#contact .container .row .col-6-inp .two textarea{
+    display: block;
+    resize: vertical;
+    height: 150px;
+    padding-top: 10px;
+}
+
+#contact .container .row .col-6-inp .two .title{
+    margin: 20px 0;
+}
+
+#contact .container .location .map{
+    overflow: hidden;
+    cursor: grab;
+}
+
+#contact .container .location .map img{
+    width: 100%;
+    filter: grayscale(90%);
+}
+
+
+/********** FOOTER **********/
+footer {
+    background: #141414;
+    color: #ffffff;
+}
+
+footer .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 90px 0;
+}
+
+footer .container .row .col-1 h1{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .container .row .col-1 p,
+footer .container .row .col-1 ul li{
+    font-size: 15px;
+    line-height: 24px;
+    color: #bcbcbc;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
+}
+
+.hamIcon{
+    display: none;
+}
+
+@media(max-width: 768px){
+    #home .works .container-fluid .row{
+        grid-template-rows: repeat(6, 300px);
+        grid-template-columns: repeat(2, 50%);    
+    }
+
+
+    #about .about-me .container-fluid .row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #about .about-me .container-fluid .row .about-me-img{
+        width: 320px;
+    }
+    #about .about-me .container-fluid .row .about-me-txt .signature{
+        margin: 20px auto;
+    }
+
+
+    #contact .container .row{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #contact .container .row .col-6-inp input{
+        width: 100%;
+    }
+    #contact .container .row .col-6-inp .one{
+        display: block;
+    }
+    #contact .container .row .col-6-inp .one .name{
+        margin-bottom: 20px;
+    }
+
+
+    footer .container .row{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    footer .container .row .col-1{
+        width: 200px;
+        margin: 10px 0;
+    }
+}
+
+@media(max-width: 425px){
+    .container{
+        padding: 0 30px;
+    }
+
+    .hamIcon{
+        display: block;
+        cursor: pointer;
+    }
+    .menu ul{
+        display: none;
+    }
+    .menu ul li:nth-child(2){
+        margin: 15px;
+    }
+    .menu ul.toggleCls{
+        display: block;
+        position: absolute;
+        padding: 10px 0;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home .works .container-fluid .row{
+        grid-template-rows: repeat(12, 300px);
+        grid-template-columns: repeat(1, 100%);    
+    }
+    .container-fluid .row .col-12 h1{
+        line-height: 50px;
+    }
+
+    
+    #contact .container .row .col-6-txt p{
+        font-size: 15px;
+        line-height: 20px;
+        width: 300px;
+    }
+
+}
